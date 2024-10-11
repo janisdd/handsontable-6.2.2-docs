@@ -305,7 +305,7 @@ function goTo(href) {
   location.href = href;
 }
 
-var _docVersions = [];
+var _docVersions = ['6.2.2'];
 
 function docVersions(docVersions) {
   _docVersions = docVersions;
@@ -366,7 +366,7 @@ function buildBreadcrumbs() {
 
   // links
   docsLink = document.createElement('a');
-  docsLink.href = '/';
+  docsLink.href = 'tutorial-introduction.html';
   docsLink.text = 'Handsontable CE';
 
   if ($('.source').size() > 0 || !$activeLink.length) {
@@ -403,7 +403,7 @@ function buildBreadcrumbs() {
       + makeSpan($activeLink.text());
   }
 
-  breadcrumbs += '<span class="right switcher"><a href="/pro/latest">Switch to Pro</a></span>';
+  //~ breadcrumbs += '<span class="right switcher"><a href="/pro/latest">Switch to Pro</a></span>';
 
   return breadcrumbs;
 }
