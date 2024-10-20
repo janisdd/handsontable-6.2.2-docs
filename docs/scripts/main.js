@@ -141,16 +141,16 @@ $(function () {
   }
 
   function updateVariables(callback) {
-    axios({
-      url: 'https://stats.handsontable.com/stats'
-    }).then(function(resp) {
-      var data = resp.data;
+    //~ axios({
+      //~ url: 'https://stats.handsontable.com/stats'
+    //~ }).then(function(resp) {
+      //~ var data = resp.data;
 
-      data.lastUpdate = Date.now();
+      //~ data.lastUpdate = Date.now();
 
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-      callback(data);
-    });
+      //~ localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      //~ callback(data);
+    //~ });
   }
 
   var STORAGE_KEY = 'dynamic-variables';

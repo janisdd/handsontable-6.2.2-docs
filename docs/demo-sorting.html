@@ -6167,7 +6167,7 @@
     <div class="example-container clearfix">
       <h3 id="default-compare-functions">Default compare functions (sorting different kinds of data)</h3>
       <p>
-        As in the native <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"><code>Array.sort</code></a> method, our internal sorting alghoritm uses the <b>compare function</b> (also known as <b>comparator</b>). Different kinds of cells (like <a href="/6.2.2/tutorial-cell-types.html"><code>date, numeric, text</code></a>) are treated in a different way. Each of them have their own comparator for sorting a particular data type.
+        As in the native <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"><code>Array.sort</code></a> method, our internal sorting alghoritm uses the <b>compare function</b> (also known as <b>comparator</b>). Different kinds of cells (like <a href="tutorial-cell-types.html"><code>date, numeric, text</code></a>) are treated in a different way. Each of them have their own comparator for sorting a particular data type.
       </p>
       <p>As a result, you can see that different types of data are sorted properly. <code>Handsontable</code> simply needs the declared data type for the column, as you can see in the example below.</p>
 
@@ -6260,7 +6260,7 @@
       <div class="example-container clearfix">
         <h3 id="column-options">Plugin options for certain columns only</h3>
         <p>
-          The plugin's options, such as <code>compareFunctionFactory</code>, <code>sortEmptyCells</code>, <code>headerAction</code>, <code>indicator</code> may be set just for a particular column. This can be done through the use of the <a href="6.2.2/Options.html#columns">columns</a> option. The example below demonstrates how to disable the indicator and <b>completely block sorting action for the first column</b>.
+          The plugin's options, such as <code>compareFunctionFactory</code>, <code>sortEmptyCells</code>, <code>headerAction</code>, <code>indicator</code> may be set just for a particular column. This can be done through the use of the <a href="Options.html#columns">columns</a> option. The example below demonstrates how to disable the indicator and <b>completely block sorting action for the first column</b>.
         </p>
 
         <div data-jsfiddle="example4">
@@ -6377,10 +6377,10 @@
           <p>
           <ul>
             <li>
-              <code><a href="/6.2.2/Hooks.html#event:beforeColumnSort">beforeColumnSort</a></code>, which as the name suggests is run before the sort. This means that the actual sort configuration obtained by the&nbsp;<code>getSortConfig</code> method within the callback will be equal to the sort configuration preserved before the hook call. The callback for <code>beforeColumnSort</code>, which will return <code>false</code>, will stop the table from being sorted. As a result, the <code>afterColumnSort</code> hook will not be called.
+              <code><a href="Hooks.html#event:beforeColumnSort">beforeColumnSort</a></code>, which as the name suggests is run before the sort. This means that the actual sort configuration obtained by the&nbsp;<code>getSortConfig</code> method within the callback will be equal to the sort configuration preserved before the hook call. The callback for <code>beforeColumnSort</code>, which will return <code>false</code>, will stop the table from being sorted. As a result, the <code>afterColumnSort</code> hook will not be called.
             </li>
             <li>
-              <code><a href="/6.2.2/Hooks.html#event:afterColumnSort">afterColumnSort</a></code>, which is run always after the sorting, unless the callback for <code>beforeColumnSort</code> hook returns <code>false</code>.
+              <code><a href="Hooks.html#event:afterColumnSort">afterColumnSort</a></code>, which is run always after the sorting, unless the callback for <code>beforeColumnSort</code> hook returns <code>false</code>.
             </li>
           </ul>
           </p>
@@ -6394,17 +6394,17 @@
           <p>List of methods exposed by the plugin:</p>
           <p>
           <ul>
-            <li><code><a href="/6.2.2/ColumnSorting.html#clearSort">clearSort</a></code></li>
-            <li><code><a href="/6.2.2/ColumnSorting.html#getSortConfig">getSortConfig</a></code></li>
-            <li><code><a href="/6.2.2/ColumnSorting.html#isSorted">isSorted</a></code></li>
-            <li><code><a href="/6.2.2/ColumnSorting.html#setSortConfig">setSortConfig</a></code></li>
-            <li><code><a href="/6.2.2/ColumnSorting.html#sort">sort</a></code></li>
+            <li><code><a href="ColumnSorting.html#clearSort">clearSort</a></code></li>
+            <li><code><a href="ColumnSorting.html#getSortConfig">getSortConfig</a></code></li>
+            <li><code><a href="ColumnSorting.html#isSorted">isSorted</a></code></li>
+            <li><code><a href="ColumnSorting.html#setSortConfig">setSortConfig</a></code></li>
+            <li><code><a href="ColumnSorting.html#sort">sort</a></code></li>
           </ul>
           </p>
         </div>
 
         <p class="gap-top-xsmall">
-          <a href="https://github.com/handsontable/docs/edit/6.2.2/tutorials/sorting.html" class="edit-doc" target="_blank">
+          <a href="https://github.com/handsontable/docs-archive/edit/6.0.1/tutorials/sorting.html" class="edit-doc" target="_blank">
             Help us improve this page
           </a>
         </p>
@@ -6437,7 +6437,7 @@
 <script src="scripts/linenumber.js"></script>
 <script src="scripts/samples.js"></script>
 <script src="scripts/main.js"></script>
-<script src="/latest/scripts/doc-versions.js"></script>
+<!--<script src="/latest/scripts/doc-versions.js"></script>-->
 <script>
     jQuery(document).foundation();
 </script>
