@@ -1,3 +1,2 @@
 User-Agent: *
 Allow: /
-Sitemap: https://josepsanzcamp.github.io/handsontable-6.2.2-docs/sitemap.xml
